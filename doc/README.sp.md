@@ -96,6 +96,27 @@ IDURAR es un ERP/CRM de Código Abierto y "Fair-Code" (Facturación/Inventario/C
 
 3.[Edita el archivo de entorno](INSTALLATION-INSTRUCTIONS.md#Step-3-Edit-the-Environment-File)
 
+### Configuración de entorno
+
+En `/backend` encontrarás un archivo llamado `.env`. Completa las variables de ejemplo para conectar tu base de datos y definir claves privadas:
+
+```bash
+DATABASE="mongodb://localhost:27017/idurar"
+JWT_SECRET="tu_clave_privada"
+NODE_ENV="production"
+OPENSSL_CONF='/dev/null'
+PUBLIC_SERVER_FILE="http://localhost:8888/"
+#RESEND_API="tu_token_resend"       # opcional para envíos de correo
+#OPENAI_API_KEY="tu_api_key_openai" # opcional para funciones de IA
+```
+
+Para que el frontend pueda comunicarse con el backend, edita el fichero `.env` dentro de `/frontend` y establece:
+
+```bash
+VITE_FILE_BASE_URL='http://localhost:8888/'
+VITE_BACKEND_SERVER='http://localhost:8888/'
+```
+
 4.[Actualiza la URI de MongoDB](INSTALLATION-INSTRUCTIONS.md#Step-4-Update-MongoDB-URI)
 
 5.[Instala las Dependencias del Backend](INSTALLATION-INSTRUCTIONS.md#Step-5-Install-Backend-Dependencies)
