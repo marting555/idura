@@ -91,6 +91,7 @@ IDURAR is Open "Fair-Code" Source ERP / CRM (Invoice / Inventory / Accounting / 
 8.[Install Frontend Dependencies](INSTALLATION-INSTRUCTIONS.md#Step-8-Install-Frontend-Dependencies)
 
 9.[Run the Frontend Server](INSTALLATION-INSTRUCTIONS.md#Step-9-Run-the-Frontend-Server)
+10.[Start Both Servers from the Project Root](INSTALLATION-INSTRUCTIONS.md#Step-10-Start-Both-Servers-from-the-Project-Root)
 
 ## Contributing
 

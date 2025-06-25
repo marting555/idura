@@ -146,4 +146,20 @@ After trying above solutions, run below command
 npm run dev
 ```
 
+#### Step 10: Start Both Servers from the Project Root
+
+If you prefer running the backend and frontend together, you can use the helper `package.json` located at the repository root. First install all dependencies:
+
+```bash
+npm install
+```
+
+Then start both servers concurrently:
+
+```bash
+npm run dev
+```
+
+This will run the backend on port `8888` and the frontend on port `3000`.
+
 > If you still facing issue, then follow [this stackoverflow thread](https://stackoverflow.com/questions/69692842/error-message-error0308010cdigital-envelope-routinesunsupported). It has so many different types of opinions. You definitely have solution after going through the thread.
