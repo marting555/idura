@@ -30,7 +30,15 @@ In the .env file, find the line that reads:
 
 `DATABASE="your-mongodb-uri"`
 
-Replace "your-mongodb-uri" with the actual URI of your MongoDB database.
+Replace "your-mongodb-uri" with the actual URI of your MongoDB database. For
+example to connect to the provided *ansimaq* cluster you can use:
+
+```
+DATABASE="mongodb+srv://jmartinezv:<password>@cluster0.egnqitp.mongodb.net/ansimaq_erp"
+```
+
+If you want to run the optional **ansimaq demo** script, also add a variable
+named `DB_PASSWORD` containing your database password in the same `.env` file.
 
 #### Step 5: Install Backend Dependencies
 
@@ -57,6 +65,15 @@ npm run setup
 ```
 
 This setup script may perform necessary database migrations or any other initialization tasks required for the project.
+
+If you wish to populate the remote *ansimaq* database with some demo products,
+run:
+
+```bash
+npm run ansimaq-demo
+```
+
+This command expects that `DB_PASSWORD` is set in your `.env` file.
 
 #### Step 7: Run the Backend Server
 
