@@ -30,11 +30,11 @@ In the .env file, find the line that reads:
 
 `DATABASE="your-mongodb-uri"`
 
-Replace "your-mongodb-uri" with the actual URI of your MongoDB database. For
-example to connect to the provided *ansimaq* cluster you can use:
+Replace "your-mongodb-uri" with the actual URI of your MongoDB database. To use
+the provided testing cluster, configure it as:
 
 ```
-DATABASE="mongodb+srv://jmartinezv:<password>@cluster0.egnqitp.mongodb.net/ansimaq_erp"
+DATABASE="mongodb+srv://jmartinezv:<password>@cluster0.egnqitp.mongodb.net/"
 ```
 
 If you want to run the optional **ansimaq demo** script, also add a variable
