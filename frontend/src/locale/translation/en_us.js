@@ -449,6 +449,14 @@ const lang = {
   enter_code: 'Enter Code',
   offers: 'Offers',
   proforma_invoices: 'quote',
+  equipment: 'Equipment',
+  equipment_list: 'Equipment List',
+  add_new_equipment: 'Add New Equipment',
+  equipment_rental: 'Equipment Rental',
+  equipment_rental_list: 'Equipment Rental List',
+  add_new_equipment_rental: 'Add New Equipment Rental',
+  billing: 'Billing',
+  connect_to_tax_service: 'Connect to Impuestos Internos',
   search: 'search',
 };
 

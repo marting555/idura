@@ -75,6 +75,21 @@ function Sidebar({ collapsible, isMobile = false }) {
       icon: <CreditCardOutlined />,
       label: <Link to={'/payment'}>{translate('payments')}</Link>,
     },
+    {
+      key: 'equipment',
+      icon: <TagOutlined />,
+      label: <Link to={'/equipment'}>{translate('equipment')}</Link>,
+    },
+    {
+      key: 'rental',
+      icon: <TagsOutlined />,
+      label: <Link to={'/rental'}>{translate('equipment_rental')}</Link>,
+    },
+    {
+      key: 'billing',
+      icon: <FileOutlined />,
+      label: <Link to={'/billing'}>{translate('billing')}</Link>,
+    },
 
     {
       key: 'paymentMode',

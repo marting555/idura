@@ -20,6 +20,9 @@ const QuoteUpdate = lazy(() => import('@/pages/Quote/QuoteUpdate'));
 const Payment = lazy(() => import('@/pages/Payment/index'));
 const PaymentRead = lazy(() => import('@/pages/Payment/PaymentRead'));
 const PaymentUpdate = lazy(() => import('@/pages/Payment/PaymentUpdate'));
+const Equipment = lazy(() => import('@/pages/Equipment'));
+const Rental = lazy(() => import('@/pages/Rental'));
+const Billing = lazy(() => import('@/pages/Billing'));
 
 const Settings = lazy(() => import('@/pages/Settings/Settings'));
 const PaymentMode = lazy(() => import('@/pages/PaymentMode'));
@@ -100,6 +103,18 @@ let routes = {
     {
       path: '/payment/update/:id',
       element: <PaymentUpdate />,
+    },
+    {
+      path: '/equipment',
+      element: <Equipment />,
+    },
+    {
+      path: '/rental',
+      element: <Rental />,
+    },
+    {
+      path: '/billing',
+      element: <Billing />,
     },
 
     {
