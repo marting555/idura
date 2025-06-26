@@ -28,11 +28,11 @@
     "vite": "^5.4.8"
   },
   "scripts": {
-    "dev": "vite",
+    "dev": "cross-env NODE_OPTIONS=--openssl-legacy-provider vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "dev:remote": "cross-env VITE_DEV_REMOTE=remote npm run dev"
+    "dev:remote": "cross-env VITE_DEV_REMOTE=remote NODE_OPTIONS=--openssl-legacy-provider vite"
   },
   "devDependencies": {
     "@types/react": "^18.2.38",

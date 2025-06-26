@@ -30,11 +30,11 @@ In the .env file, find the line that reads:
 
 `DATABASE="your-mongodb-uri"`
 
-Replace "your-mongodb-uri" with the actual URI of your MongoDB database. For
-example to connect to the provided *ansimaq* cluster you can use:
+Replace "your-mongodb-uri" with the actual URI of your MongoDB database. To use
+the provided testing cluster, configure it as:
 
 ```
-DATABASE="mongodb+srv://jmartinezv:<password>@cluster0.egnqitp.mongodb.net/ansimaq_erp"
+DATABASE="mongodb+srv://jmartinezv:<password>@cluster0.egnqitp.mongodb.net/"
 ```
 
 If you want to run the optional **ansimaq demo** script, also add a variable
@@ -145,5 +145,21 @@ After trying above solutions, run below command
 ```bash
 npm run dev
 ```
+
+#### Step 10: Start Both Servers from the Project Root
+
+If you prefer running the backend and frontend together, you can use the helper `package.json` located at the repository root. First install all dependencies:
+
+```bash
+npm install
+```
+
+Then start both servers concurrently:
+
+```bash
+npm run dev
+```
+
+This will run the backend on port `8888` and the frontend on port `3000`.
 
 > If you still facing issue, then follow [this stackoverflow thread](https://stackoverflow.com/questions/69692842/error-message-error0308010cdigital-envelope-routinesunsupported). It has so many different types of opinions. You definitely have solution after going through the thread.
